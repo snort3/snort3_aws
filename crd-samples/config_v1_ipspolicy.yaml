@@ -1,0 +1,11 @@
+apiVersion: config.github.com/v1
+kind: IpsPolicy
+metadata:
+  name: ipspolicy-sample
+spec:
+  # Allowed IPS polices
+  #policyName: no-rules-active
+  #policyName: connectivity-over-security
+  policyName: security-over-connectivity
+  #policyName: balanced-security-and-connectivity
+  #policyName: maximum-detection

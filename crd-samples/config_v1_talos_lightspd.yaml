@@ -1,0 +1,6 @@
+apiVersion: config.github.com/v1
+kind: TalosSpd
+metadata:
+  name: talosspd-sample
+spec:
+  version: "2021-11-27-002"
