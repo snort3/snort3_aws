@@ -10,6 +10,7 @@ snort3:
   - interface: eth1
   - mode: -Q # use -Q for inline mode and -v for passive mode
   - numThread: 4
+
 Here interface is where snort3 will be listening on for Geneve traffic (UDP port 6081). Please make sure
 you have security group rule to allow incoming traffic from UDP port 6081.
 
