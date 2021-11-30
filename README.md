@@ -19,8 +19,9 @@ snort3:
   - interface: eth0:eth1
   - mode: -Q # use -Q for inline mode and -v for passive mode
   - numThread: 2
-For on-prem deployment, you should use afpacket in general. If you want to deploy it wiht inline mode, you
-need an inline pair of interfaces. Please refer to snort3 manual (https://github.com/snort3/snort3/releases/download/3.1.17.0/snort_user.pdf) for more details.
+
+For on-prem deployment, you should use afpacket in general. If you want to deploy it with inline mode, you
+need an inline pair of interfaces. Please refer to snort3 manual (https://github.com/snort3/snort3/releases/download/3.1.16.0/snort_user.pdf) for more details.
 
 ## How to apply Talos_LightSPD.tar.gz dowloaded from your www.snort.org account
 ```
