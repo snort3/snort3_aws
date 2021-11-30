@@ -26,7 +26,7 @@ if [ $# -eq "8" ]; then
 	ParameterKey=NumberOfNodes,ParameterValue=2 \
 	ParameterKey=VPCID,ParameterValue=$VPC_ID \
 	ParameterKey=PrivateSubnet1ID,ParameterValue=$PRIVATE_SUBNET1_ID \
-	ParameterKey=PrivateSubnet2ID,ParameterValue=$PRIVATE_SUBNET2_ID
+	ParameterKey=PrivateSubnet2ID,ParameterValue=$PRIVATE_SUBNET2_ID \
 	ParameterKey=PublicSubnet1ID,ParameterValue=$PUBLIC_SUBNET1_ID \
 	ParameterKey=PublicSubnet2ID,ParameterValue=$PUBLIC_SUBNET2_ID
   exit
