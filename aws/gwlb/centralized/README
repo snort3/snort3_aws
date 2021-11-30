@@ -1,4 +1,8 @@
+Install GWLB in a new VPC using centralized architecture, https://github.com/aws-samples/aws-gateway-load-balancer-code-samples/tree/main/aws-cloudformation/centralized_architecture.
+
 Order of creation:
-  gwlb-ca
-  spoke-vpc
-  tgw-ca
+    create-gwlb-ca.sh
+    create-test-vpc.sh
+    create-tgw-ca.sh
+
+All the parameters for running the scripts can be retrieved from the cloudformation "Parameters" tab.
