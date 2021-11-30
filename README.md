@@ -4,6 +4,7 @@
 
 ### AWS EKS deployment with gateway load balancer (GWLB)
 Please see aws/gwlb and aws/eks in this repo for creating GWLB and EKS using cloudformation templates.
+
 snort3:
   - daq: gwlb
   - interface: eth1
@@ -20,8 +21,6 @@ snort3:
   - numThread: 2
 For on-prem deployment, you should use afpacket in general. If you want to deploy it wiht inline mode, you
 need an inline pair of interfaces. Please refer to snort3 manual (https://github.com/snort3/snort3/releases/download/3.1.17.0/snort_user.pdf) for more details.
-
-### On-prem deployment
 
 ## How to apply Talos_LightSPD.tar.gz dowloaded from your www.snort.org account
 ```
