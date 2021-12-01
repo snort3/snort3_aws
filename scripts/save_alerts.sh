@@ -12,7 +12,7 @@ array=($out)
 for pod in "${array[@]}"; do
     tar_file="alert-$pod-$curr_time.tar.gz"
     echo "saving IPS alerts in pod $pod to $tar_file"
-    alert_cmd="supervisorctl stop snort && tar czvfP /var/tmp/$tar_file /var/snort/events/*_alert_*.txt && rm /var/snort/events/*_alert_*.txt && supervisorctl start snort"
+    alert_cmd="supervisorctl stop snort && tar czvfP /var/tmp/$tar_file /var/snort/events/*alert_*.txt && rm /var/snort/events/*alert_*.txt && supervisorctl start snort"
     echo $alert_cmd
     cmd_out=`kubectl exec $pod -n isv-namespace -c snort3 -- bash -c "$alert_cmd"`
     echo "tar out: $cmd_out"
