@@ -18,15 +18,15 @@ ApplianceVpcApplianceRtb1Id=$6
 ApplianceVpcApplianceRtb2Id=$7
 Spoke1VpcId=$8
 Spoke1VpcTgwAttachSubnet1Id=$9
-Spoke1VpcTgwAttachSubnet2Id=$10
-Spoke1VpcRtb1Id=$11
-Spoke2VpcId=$12
-Spoke2VpcTgwAttachSubnet1Id=$13
-Spoke2VpcTgwAttachSubnet2Id=$14
-Spoke2VpcRtb1Id=$15
+Spoke1VpcTgwAttachSubnet2Id="${10}"
+Spoke1VpcRtb1Id="${11}"
+Spoke2VpcId="${12}"
+Spoke2VpcTgwAttachSubnet1Id="${13}"
+Spoke2VpcTgwAttachSubnet2Id="${14}"
+Spoke2VpcRtb1Id="${15}"
 
 aws cloudformation create-stack \
-	--stack-name $TACK_NAME \
+	--stack-name $STACK_NAME \
 	--template-body file://tgw-ca.yaml \
 	--region $REGION \
 	--parameters ParameterKey=ApplianceVpcId,ParameterValue=$ApplianceVpcId \

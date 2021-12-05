@@ -7,8 +7,8 @@ if [ $# -ne "4" ]; then
 fi
 REGION=$1
 KEY_PAIR_NAME=$2
-AZ1=$2
-AZ2=$3
+AZ1=$3
+AZ2=$4
 
 aws cloudformation create-stack \
 	--stack-name spoke1-vpc \
